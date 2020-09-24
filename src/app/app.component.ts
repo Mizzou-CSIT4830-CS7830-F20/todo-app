@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'; 
 
 @Component({
   selector: 'app-root',
@@ -26,6 +26,16 @@ export class AppComponent {
         this.todoArray.splice(i, 1); 
         console.log("delete item"); 
       }
+    }
+  }
+
+  todoSubmit(form:any){
+    if(form != ""){
+      console.log(form); 
+      this.todoArray.push(form.todo); 
+    }
+    else {
+      alert("Todo Field Reqired!!"); 
     }
   }
 }

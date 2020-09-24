@@ -5,7 +5,9 @@
       <h1 class="text-center text-primary">Todo App</h1>
       <div class="input-group-prepend">
         <input #todo type="text" class="form-control" placeholder="Add Todo" name="todo">
-        <span class="input-group-text" (click)="addTodo(todo.value)">Add</span>
+        <span class="input-group-text" (click)="addTodo(todo.value)">
+          <i class="material-icons">add</i>
+        </span>
       </div>
     </div>
   </form>
